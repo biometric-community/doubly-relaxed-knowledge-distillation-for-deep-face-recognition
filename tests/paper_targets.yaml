@@ -1,0 +1,13 @@
+# Zhou, Yuan, Yang, Zhang, Ying & Gong, "Doubly Relaxed Knowledge Distillation for Deep Face
+# Recognition", IEEE TBIOM 8(5), 2026, doi:10.1109/TBIOM.2026.3671881. Closed access: the
+# checks follow the abstract (Z-score logits instead of softmax, cosine similarity as the
+# transfer measure, equivalent to Pearson correlation of the raw logits, relaxing both the
+# variance and the linear-relationship constraints). No published values are recorded.
+source: doi:10.1109/TBIOM.2026.3671881
+
+# Sec. (abstract): a ResNet-50 teacher distilled into a smaller student.
+teacher: resnet50
+student: resnet18
+
+# A working recogniser; LFW accuracy of 90% is a loose floor.
+clean_lfw_accuracy_floor: 90.0
